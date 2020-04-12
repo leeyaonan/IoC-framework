@@ -1,5 +1,6 @@
 package com.leeyaonan.servlet;
 
+import com.leeyaonan.factory.BeanFactory;
 import com.leeyaonan.pojo.Result;
 import com.leeyaonan.service.TransferService;
 import com.leeyaonan.service.impl.TransferServiceImpl;
@@ -20,7 +21,10 @@ import java.io.IOException;
 public class TransferServlet extends HttpServlet {
 
     // 1. 实例化service层对象
-    private TransferService transferService = new TransferServiceImpl();
+//    private TransferService transferService = new TransferServiceImpl();
+
+    // 2020年4月13日 针对问题一的改造，将dao层的实现由直接new改为从BeanFactory中获取
+    private TransferService transferService = (TransferService) BeanFactory.getBean("transferService");
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
