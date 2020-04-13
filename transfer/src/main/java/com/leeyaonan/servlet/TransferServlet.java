@@ -1,6 +1,7 @@
 package com.leeyaonan.servlet;
 
 import com.leeyaonan.factory.BeanFactory;
+import com.leeyaonan.factory.ProxyFactory;
 import com.leeyaonan.pojo.Result;
 import com.leeyaonan.service.TransferService;
 import com.leeyaonan.service.impl.TransferServiceImpl;
@@ -24,7 +25,14 @@ public class TransferServlet extends HttpServlet {
 //    private TransferService transferService = new TransferServiceImpl();
 
     // 2020年4月13日 针对问题一的改造，将dao层的实现由直接new改为从BeanFactory中获取
-    private TransferService transferService = (TransferService) BeanFactory.getBean("transferService");
+//    private TransferService transferService = (TransferService) BeanFactory.getBean("transferService");
+
+    // 2020年4月13日 从工厂中获取委托对象（委托对象是增强了事务控制的功能）
+
+    // 首先从BeanFactory获取到proxyFactory代理工厂的实例化对象
+    private ProxyFactory proxyFactory = (ProxyFactory) BeanFactory.getBean("proxyFactory");
+    private TransferService transferService = (TransferService) proxyFactory.getJdkProxy(BeanFactory.getBean("transferService")) ;
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

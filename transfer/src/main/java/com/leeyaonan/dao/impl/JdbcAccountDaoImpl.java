@@ -5,6 +5,7 @@ import com.alibaba.druid.pool.DruidPooledConnection;
 import com.leeyaonan.dao.AccountDao;
 import com.leeyaonan.pojo.Account;
 import com.leeyaonan.utils.C3p0Utils;
+import com.leeyaonan.utils.ConnectionUtils;
 import com.leeyaonan.utils.DruidUtils;
 
 import java.sql.Connection;
@@ -18,10 +19,20 @@ import java.sql.SQLException;
  */
 public class JdbcAccountDaoImpl implements AccountDao {
 
+    private ConnectionUtils connectionUtils;
+
+    public void  setConnectionUtils(ConnectionUtils connectionUtils) {
+        this.connectionUtils = connectionUtils;
+    }
+
     @Override
     public Account queryAccountByCardNo(String cardNo) throws Exception {
         // 从连接池中获取连接
-        Connection con = DruidUtils.getInstance().getConnection();
+//        Connection con = DruidUtils.getInstance().getConnection();
+        // 2020年4月13日 修改从ConnectionUtils中获取当前线程的连接
+        Connection con = connectionUtils.getCurrentThreadConn();
+
+
         String sql = "select * from account where cardNo = ?";
         PreparedStatement preparedStatement = con.prepareStatement(sql);
         preparedStatement.setString(1, cardNo);
@@ -45,7 +56,10 @@ public class JdbcAccountDaoImpl implements AccountDao {
     public int updateAccountByCardNo(Account account) throws Exception {
 
         // 从连接池中获取连接
-        Connection con = DruidUtils.getInstance().getConnection();
+//        Connection con = DruidUtils.getInstance().getConnection();
+        // 2020年4月13日 修改从ConnectionUtils中获取当前线程的连接
+        Connection con = connectionUtils.getCurrentThreadConn();
+
         String sql = "update account set money = ? where cardNo = ?";
         PreparedStatement preparedStatement = con.prepareStatement(sql);
         preparedStatement.setInt(1,account.getMoney());

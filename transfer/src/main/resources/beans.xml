@@ -8,4 +8,19 @@
     </bean>
 
     <bean id="accountDao" class="com.lagou.edu.dao.impl.JdbcAccountDaoImpl"></bean>
+
+    <bean id="connectionUtils" class="com.leeyaonan.utils.ConnectionUtils">
+        <property name="ConnectionUtils" ref="connectionUtils"/>
+    </bean>
+
+    <!--事务管理器-->
+    <bean id="transactionManager" class="com.leeyaonan.utils.TransactionManager">
+        <property name="ConnectionUtils" ref="connectionUtils"/>
+    </bean>
+
+    <!--代理对象工厂-->
+    <bean id="proxyFactory" class="com.leeyaonan.factory.ProxyFactory">
+        <property name="TransactionManager" ref="transactionManager"/>
+    </bean>
+
 </beans>
