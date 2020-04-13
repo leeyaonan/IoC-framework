@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="transfer-ioc-xml-anno:war">
+    <output-path>$PROJECT_DIR$/transfer-ioc-xml-anno/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>transfer-ioc-xml-anno</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="transfer-ioc-xml-anno-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="transfer-ioc-xml-anno:war exploded" />
+    </root>
+  </artifact>
+</component>

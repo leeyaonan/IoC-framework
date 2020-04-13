@@ -2,6 +2,8 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/transfer" />
+    <file type="web" url="file://$PROJECT_DIR$/transfer-ioc-anno" />
+    <file type="web" url="file://$PROJECT_DIR$/transfer-ioc-xml-anno" />
     <file type="web" url="file://$PROJECT_DIR$/transfer-iocxml" />
   </component>
   <component name="MavenProjectsManager">
@@ -9,10 +11,12 @@
       <list>
         <option value="$PROJECT_DIR$/transfer/pom.xml" />
         <option value="$PROJECT_DIR$/transfer-iocxml/pom.xml" />
+        <option value="$PROJECT_DIR$/transfer-ioc-xml-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/transfer-ioc-anno/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
