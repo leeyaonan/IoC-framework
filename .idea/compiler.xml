@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="transfer-iocxml" />
         <module name="transfer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="transfer" target="11" />
+      <module name="transfer-iocxml" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

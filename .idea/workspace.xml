@@ -7,10 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf64c57b-2a69-4995-bf1b-a6497a3d9611" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/factory/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/transfer_iocxml_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/transfer_iocxml_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transfer-iocxml/src/test/java/IoCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transfer-iocxml/transfer-iocxml.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/dao/impl/JdbcAccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/dao/impl/JdbcAccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/servlet/TransferServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/servlet/TransferServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/service/impl/TransferServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/service/impl/TransferServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transfer/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/src/main/resources/beans.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +73,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/transfer/src/main/webapp/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/transfer-iocxml" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18976744" />
@@ -240,7 +252,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586663423217</updated>
       <workItem from="1586663427131" duration="6048000" />
-      <workItem from="1586670521032" duration="13542000" />
+      <workItem from="1586670521032" duration="16415000" />
     </task>
     <servers />
   </component>
@@ -259,16 +271,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/transfer/src/main/java/com/leeyaonan/service/impl/TransferServiceImpl.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
